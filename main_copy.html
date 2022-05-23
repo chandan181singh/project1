@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in north India</title>
+   
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#navbar{
+    overflow: hidden;
+    position: fixed;
+    margin-bottom: 5%;
+    top: 0;
+    width: 100%;
+}
+#navbar ul{
+    display: flex;
+    top:0px;
+    left:0px;
+    background-color: black;
+}
+#navbar ul li{
+    list-style: none;
+    color: white;
+    margin: 10px;
+    
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    color: aliceblue;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+    border-radius: 10px;
+}
+#welcome::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+   
+    left:0px;
+    height: 26%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+}
+#welcome{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+#welcome h1{
+    text-align: left;
+   font-size: 3rem;
+   color: bisque;
+   margin-top: 5%;
+   margin-left: 15%;
+  
+}
+
+
+#welcome img{
+    height: 153px;
+    width: 591px;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+#pic1 {
+   display: flex;
+}
+
+#pic1 img{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+#pic1 h2{
+    font-family: Comic Sans MS;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 4%;
+}
+#pic1 h2 img{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+#Pearl{
+    flex-direction: row;
+}
+#Pearl h1{
+    margin-top: 0%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Comic Sans MS;
+}
+#Pearl{
+    margin-left: 8%;
+    display: flex;
+}
+#Pearl ul{
+   display: flex;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+#Pearl ul li a{
+  
+
+    font-size: 1.5rem;
+    color: rgb(7, 7, 242);
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    border: 3px solid rgb(219, 45, 45);
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: rgb(178, 255, 127);
+    top:0px;
+    left:0px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+#Pearl ul li a:hover{
+    background-color: rgb(7, 7, 242);
+    color: white;
+    border-radius: 10px;
+}
+
+
+#Pearl img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+body{
+     background-color: antiquewhite;
+
+}
+
+#agra img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    
+    margin-bottom: 1%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+#agra{
+    display: flex;
+}
+#agra h1{
+    font-size: 3rem;
+    margin-left: 5%;
+    flex-direction: column;
+}
+#agra h2{
+    margin-top: 9%;
+    margin-left: 4%;
+    margin-right: 3%;
+    font-family: 'Neuton', serif;
+}
+#ladakh img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+#ladakh h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
+#parvati h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#parvati img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Nainital h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Nainital img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Dalhousie h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Dalhousie img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Spiti h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Spiti img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+#Auli img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Auli h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Pahalgam img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Pahalgam h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Mathura img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Mathura h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Haridwar img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Haridwar h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+#Mussoorie img{
+    height: 400px;
+    width: 600px;
+    align-items: right;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+#Mussoorie h1{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
+.center img{
+  align-items: center;
+   margin-bottom: 10%;
+   margin-left: 20%;
+   border-radius: 20px;
+
+}
+#follow{
+    display: flex;
+    margin-left: 6%;
+}
+#follow li{
+    list-style: none;
+}
+#follow h3{
+    font-size: 1.5rem;
+}
+#follow li img{
+    height: 80px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 100px;
+    margin-right: 40px;
+    
+}
+#follow img :hover{
+        background-color: brown;
+}
+
+.important{
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+
+    </style>
+</head>
+<body>
+   
+    <nav id="navbar">
+       
+        <ul>
+            <li class="iteam"><a href="#">Home🏠</a></li>
+            <li class="iteam"><a href="#">Our_Services🙏🙏</a></li>
+            <li class="iteam"><a href="#Pearl">Indian_Pearls🙃🙃</a></li>
+            <li class="iteam"><a href="#">Contact_Us😀😀</a></li>
+            <li class="iteam"><a href="#">About_Us🎁</a></li>
+        </ul>
+    </nav>
+        <div id="welcome">
+            <h1> <u>WELCOME TO  NORTH INDIA</u></h1>
+            <div id="logo">
+                <img src="http://www.onlytravelguide.com/images/north-india-images/north-india-banner.jpg" alt="India's Pearl">
+           </div>
+        </div>
+  
+
+   
+       <div id="pic1">
+           <img src="https://4.bp.blogspot.com/-1NtNY3PD00E/Wivto6aU7xI/AAAAAAAAMXk/TsAw0BiOr_wNhF5eyt_8LHk4J_A1Sp7OQCLcBGAs/s1600/north-india-new%2Bcopy.png" alt="soomry">
+           <h2>"India is a country with deep cultural roots and a rich heritage. A great country for budget travel, India is popular for its forts and palace.North India is like a color palatte of an artist
+            who had painted the canvas with green of the farms and valleys, the brown of the mountains and deserts,  and the white of snow beautifully."
+            <br><img src="https://lh3.googleusercontent.com/_qrBYX3e5snL8Dx5MagVDxmuguIQnZ_oLWr_heuWJwavVFi_yUmkgo-HrGsb4KyzeLbh7Rs1tA=w1080-h608-p-no-v0" alt="ATiThi DeVo BhAV"></h2>
+       </div>
+    
+
+    <div id="Pearl">
+            <h1> <br>The Pearls of India<br><img src="https://www.visittnt.com/blog/wp-content/uploads/2018/11/North-India.jpg" alt=""></h1>
+           <section class="ck1">
+        <ul><b><br><br><br><br><br>
+            <li class="iteam"><a href="#agra">Agra, Uttar Pradesh</a></li>
+            <li class="iteam"><a href="#ladakh">Leh-Ladakh, Jammu, and Kashmir</a></li>
+            <li class="iteam"><a href="#parvati"> Parvati Valley, Himachal Pradesh</a></li>
+            <li class="iteam"><a href="#Nainital">Nainital, Uttarakhand</a></li>
+            <li class="iteam"><a href="#Dalhousie">Dalhousie, Himachal Pradesh </a></li>
+            <li class="iteam"><a href="#Spiti">Spiti, Himachal Pradesh</a></li>
+            <li class="iteam"><a href="#Auli">Auli, Uttarakhand</a></li>
+            <li class="iteam"><a href="#Pahalgam">Kashmir Circuit – Pahalgam, Sonmarg, Gulmarg, and Srinagar</a></li>
+            <li class="iteam"><a href="#Mathura">Mathura and Vrindavan, Uttar Pradesh</a></li>
+            <li class="iteam"><a href="#Haridwar">Haridwar and Rishikesh, Uttarakhand</a></li>
+            <li class="iteam"><a href="#Mussoorie">Mussoorie and Dehradun, Uttarakhand</a></li>
+          
+   
+            </section>
+        </b>
+        </ul>
+       
+    </div>
+   <div id="agra">
+       <h1><br>💫 <u>Agra, Uttar Pradesh</u>
+       <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/72/b3.jpg" alt=""></h1>
+       <h2>
+        Agra, home to the famous <a href="https://tajmahal.gov.in/"><b>Taj Mahal</b></a>, counts among the top places to visit in North India and for all the right reasons. The historical city in Uttar Pradesh is a medley of grand monuments, exceptional architecture, and mesmerizing sights and sounds. It boasts of three UNESCO World Heritage sites, several enticing gardens, vibrant local markets, emporiums, and lip-smacking street food. Agra is also part of the famous Golden-Triangle circuit</h2>
+       
+    
+   </div>
+   <section class="important">
+    <ul>
+        <li> <b>Best Time to Visit :</b> October to March</li><br>
+        <li><b>Key Attractions : </b>Taj Mahal, Mughal Gardens, Taj Museum, Agra Fort, Mehtab Bagh, Akbar’s Tomb, Fatehpur Sikri, Jama Masjid, Chini-ka-Rauza, and I’timād-ud-Daulah or Baby Taj. Learn more about the places to visit in Agra</li><br>
+        <li><b>Nearest Airport : </b>Indira Gandhi International Airport, Agra Airport</li>
+        <li><b>Nearest Railway Station : </b>Agra Cantonment, Agra Fort Railway Station, Agra City Railway Station, and Idgah</li>
+        
+    </ul>
+
+   </section>
+  
+<div id="ladakh">
+    <h1><br>💫 <u>Leh-Ladakh, Jammu, and Kashmir</u></h1>
+    <img src="https://hikerwolf.com/wp-content/uploads/2022/01/Leh-to-Leh-ladakh-trip.png" alt="">
+    <h2>
+        Leh-Ladakh is one of the most picturesque adventure spots in North India. Its unique landscape varies from rugged mountains with snow-capped peaks to pristine blue lakes, lush green pockets, and shifting dunes of the Nubra valley to meandering rivers. It is home to several monasteries covered in a mystic, spiritual air. Thrill-seekers find Leh-Ladakh exhilarating for treks across the Zanskar range, bike rides over the mountains and rafting down the Indus and Zanskar rivers. The people, culture, and food of this region are heavily influenced by Tibetan culture. 
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: April to September. November to March offers a unique chance to see the lakes frozen into solid ice.</li>
+        <li>Key Attractions in Leh-Ladakh: Khardung La, Nubra Valley, Thiksey Monastery, Leh Palace, Magnetic Hill, Shanti stupa, Zorawar Fort, Hall of Fame, Gurudwara Pathar Sahib, Pangang Tso, Tso Moriri, Tso Kar and Hemis Monastery</li>
+        <li>Nearest Airport: Kushok Bakula Rimpochee Airport, Leh</li>
+        <li>Nearest Railway Station: Srinagar</li>
+    </ul>
+</section>
+
+<div id="parvati">
+    <h1><br>💫 <u>Parvati Valley, Himachal Pradesh</u></h1>
+    <img src="https://www.tripsavvy.com/thmb/5HbFV31gqaUtRTUF8lx7ADzjyWo=/735x0/colorful-local-houses-in-manikaran--india-1279673359-de430befbb0947d3b76d3c0c95916d6b.jpg" alt="">
+    <h2>
+        Nestled between the forests of Kasol and the pilgrim town of Manikaran, Parvati Valley is famed for its natural beauty. Its slopes are covered with lush greenery and pine trees while the gushing Parvati River complements the magnificent mountain hills. With a reputation for excellent trekking routes, the Parvati Valley welcomes Indian and international tourists with affordable accommodation and plenty of hangout spots. While on one hand, it has a spiritual aura, one the other the hippies make the air reverberate with music.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: April to May and October to November</li>
+        <li>Key Attractions in the Parvati Valley: Kasol, Chalal Trek, Gurudwara Shri Manikaran Sahib, Hot Springs, Choj Bridge, Khirganga National Park, Fairy Forest, Rudranaag, Kheerganga Waterfall, and Barshaini Temple</li>
+        <li>Nearest Airport: Bhuntar Airport, Kullu,</li>
+        <li>Nearest Railway Station: Joginder Nagar</li>
+    </ul>
+</section>
+<div id="Nainital">
+    <h1><br>💫 <u>Nainital, Uttarakhand</u></h1>
+    <img src="https://static2.tripoto.com/media/filter/tst/img/2175980/TripDocument/1636190404_images_21.jpeg" alt="">
+    <h2>
+        With a beautiful lake that takes center stage, Nainital is one of the most popular family destinations in North India. The town has a number of trekking routes that offer spectacular views of forested valleys and pristine lakes. Everything about Nainital seems designed to relax the mind and spirit. In winter, the town is covered with snow and looks like it belongs to a postcard. The Nainital Winter Carnival is a 3 days extravagant celebration with cultural performances, bird watching, and heritage trails.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: March to June. Late November to February is a good time to experience snow and winter carnival.</li>
+        <li>Key Attractions in Nainital: Naini Lake, Tiffin Top, Eco Cave Garden, G B Pant High Altitude Zoo, Naina Devi Temple, Mall Road, Snow View Point, Governor House, Naina Peak, Kilbury Road, Jeolikot, Land’s End, Peora, Sariyatal, and Nainital Ropeway</li>
+        <li>Nearest Airport: Pantnagar Airport</li>
+        <li>Nearest Railway Station: Kathgodam Railway Station</li>
+    </ul>
+</section>
+<div id="Dalhousie">
+    <h1><br>💫 <u>Dalhousie, Himachal Pradesh</u></h1>
+    <img src="https://3.imimg.com/data3/RW/OV/MY-10437174/dalhousie-khajjiar-chamba-500x500.jpg" alt="">
+    <h2>
+        Surrounded by snow-capped hills in the winter and pine-clad valleys in the summer, Dalhousie is a nature lover’s paradise. Apart from honeymooners and families, this is one of the popular tourist places for solo travelers in North India. Sprawled across 5 hills and valleys, Dalhousie has many bungalows, churches, and cottages that date back to the British era. It abounds in natural beauty and boasts of picturesque waterfalls, trekking routes, lakes, dams and a wildlife sanctuary that houses over 100 rare species of birds and animals.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: March to May. October to February is a good time to experience snow.</li>
+        <li>Key Attractions in Dalhousie: Panch Pulla, St. John’s Church, Satdhara Falls, St. Francis’ Church, Kalatop Wildlife Sanctuary, Dainkund Peak, Chamunda Devi Temple, Khajjiar, Barapattar Hill, Subhash Baoli, Sach Pass, and Ganji Pahari</li>
+        <li>Nearest Airport: Pathankot Airport and Gaggal Airport</li>
+        <li>Nearest Railway Station: Pathankot Railway Station</li>
+    </ul>
+</section>
+<div id="Spiti">
+    <h1><br>💫 <u>Spiti, Himachal Pradesh</u></h1>
+    <img src="https://www.thestatesman.com/wp-content/uploads/2018/07/Spiti.jpg" alt="">
+    <h2>
+        Spiti is one of the coldest places in India and offers spectacular peeks of the cold desert. The place is accessible only during the summer months. With its numerous trekking trails offering panoramic views of the Himalayans, Spiti is a trekker’s paradise. Its long winding roads are also favored by bikers. The natural beauty of the place is enhanced by whitewashed chortens, Tibetan prayer flags fluttering in the wind, and quaint monasteries. In the summer, the snow melts to reveal a carpet of beautiful flowers over the hillsides.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: May to July</li>
+        <li>Key Attractions in Spiti: Chandra Taal, Pin Valley National Park, Bara-lacha la, Key Monastery, Kunzum Pass, Hamta Pass, Suraj Tal, Bhabha Pass, Tabo Monastery, Dhankar Lake, Lahaul Valley, Kardang Monastery, Inderkilla National Park, and Bara Shingri Glacier</li>
+          
+        <li>  Nearest Airport: Bhuntar Airport, Kullu</li>
+        <li>Nearest Railway Station: Joginder Nagar and Shimla</li>
+    </ul>
+</section>
+<div id="Auli">
+    <h1><br>💫 <u>Auli, Uttarakhand</u></h1>
+    <img src="https://uttarakhandtourism.gov.in/sites/default/files/2021-02/Skiing%2C%20Auli_1.jpg" alt="">
+    <h2>
+        Auli is amongst the most popular hill stations in North India. Everywhere you look, you can see pine trees, majestic old oaks, and apple orchards. The lush green hillsides of the Garhwal Himalayas are popular trekking routes that offer spectacular views of the snow-draped mountains around Auli. In winter, the slopes come alive with skiers. During the rest of the year, the slopes are covered with snow. Auli also has a number of temples that make it a part of the pilgrim circuit.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: April to June. December to February is ideal for skiing.</li>
+        <li>Key Attractions in Auli: Auli Ropeway, Trishul Peak, Gorson Bugyal, Kwani Bugyal, Artificial Lake, Chenab Lake, Joshimath, Chattrakund, Narsigh Temple, Rudraprayag, Nandaprayag, and Nanda Devi Peak</li>
+        <li>Nearest Airport: Jolly Grant Airport, Dehradun</li>
+        <li>Nearest Railway Station: Haridwar, Dehradun and Rishikesh</li>
+    </ul>
+</section>
+<div id="Pahalgam">
+    <h1><br>💫 <u>Kashmir Circuit – Pahalgam, Sonmarg, Gulmarg, and Srinagar</u></h1>
+    <img src="https://www.tourmyindia.com/states/jammu-kashmir/image/splendor-of-kashmir-it.jpg" alt="">
+    <h2>
+
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>
+<div id="Mathura">
+    <h1><br>💫 <u>Mathura and Vrindavan, Uttar Pradesh</u></h1>
+    <img src="https://imgk.timesnownews.com/story/Mathura_temple_PTI_0.jpg?tr=w-400,h-300,fo-auto" alt="">
+    <h2>
+        The natural beauty of the Kashmir Circuit makes it one of the top places to visit in North India. There’s a lot to take in here ranging from the mesmerizing lakes and expansive gardens to the snow-capped mountains in the distance. Srinagar is also a hub of activity with bustling local markets. The Kashmiri wazwan calls for a special mention for its rich aromas and flavors. In winter, the slopes of Sonamarg, Gulmarg, and Pahalgam become ideal for skiing and winter sports.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: March to August. December to February is a good time to enjoy snow</li>
+        <li>Key Attractions in the Kashmir Circuit: Dal Lake, Shalimar Bagh, Shankaracharya Temple, Pari Mahal, Indira Gandhi Memorial Tulip Garden, Chashme Shahi, Hazratbal Shrine, Hari Parbat, Jamia Masjid, Betaab Valley, Pahalgam Lakes, Gulmarg Gondola, and
+           </li>
+        <li> Nearest Airport: Sheikh ul-Alam International Airport, Srinagar</li>
+        <li>Nearest Railway Station: Jammu Railway Station and Srinagar Railway Station</li>
+    </ul>
+</section>
+<div id="Haridwar">
+    <h1><br>💫 <u>Haridwar and Rishikesh, Uttarakhand</u></h1>
+    <img src="https://www.tourmyindia.com/weekend-tours/images/haridwar-and-rishikesh-tour1.webp" alt="">
+    <h2>
+        It is impossible to talk about religious places in North India without mentioning Haridwar and Rishikesh. Considered to be twin national heritage cities, Haridwar and Rishikesh have a spiritual aura that attracts soul seekers and pilgrims from across the world. Even the Beatles visited Rishikesh in the 60s! While on one hand, the Ganges is meditated upon, on the other, its white rapids call out to thrill-seekers making it one of the most popular adventure spots in North India. Both towns have a vegetarian food culture and are known for delicious street food spread. Further, Rishikesh is the starting point for the Char Dhaam Yatra.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: March to June and October to November</li>
+        <li>Key Attractions in Haridwar: Har ki Pauri Ghat, Mansa Devi Temple, Chandi Devi Temple, Daksha Mahadev Temple, Shanti Kunj Ashram, Rajaji National Park, Chilla Wildlife Sanctuary, Swami Vivekanand Park, Maya Devi Temple, Piran Kaliyar, and Ganga Aarti. Learn more about top places to visit in Haridwar</li>
+        <li>Key Attractions in Rishikesh: Yoga Treats, Jadh Ganga Trek, Kuari Pass, Kaudiyala Ram Jhula, Lakshman Jhula, Triveni Ghat, Neelkanth Mahadev, Byasi, Parmanth Ghat, and Tera Manzil (Trimbakeshwar )Temple. Learn more about things to do in Rishikesh.
+            </li>
+        <li>Nearest Airport: Jolly Grant Airport, Dehradun</li>
+        <li>Nearest Railway Station: Haridwar and Rishikesh</li>
+    </ul>
+</section>
+<div id="Mussoorie">
+    <h1><br>💫 <u>Mussoorie and Dehradun, Uttarakhand</u></h1>
+    <img src="https://i.pinimg.com/originals/d0/79/94/d07994a11c40b78b75d1097187ed3daf.jpg" alt="">
+    <h2>
+        The tree-covered hills and valleys of Dehradun and Mussoorie have attracted families and couples since the 1800s. Offering stunning views of Dehradun on one side and snow-capped Himalayan peaks on the other, the British rightly called Mussoorie, The Queen of Hill Stations. Located merely 33 km apart, these hills are also popular with trekkers. In addition to their natural beauty, Dehradun and Mussoorie boast of a number of institutions, churches, and summer palaces from the British-raj era.
+    </h2>
+</div>
+<section class="important">
+    <ul>
+        <li>Best Time to Visit: March to June. December to February is ideal to experience snow.</li>
+        <li>Key Attractions in Mussoorie: Lake Mist, Camel’s Back Road, Cloud’s End, Mussoorie Lake, Gunhill Road, Mall Road, Lal Tibba Scenic Point, Bhatta Falls, Company Garden, Soham Heritage & Art Center, Mossy Falls, Bhadraj Temple, Benog Wildlife Sanctuary, Jwala Devi Temple, Happy Valley, and Kempty Falls. Learn more about things to do in Mussoorie.</li>
+        <li>Key Attractions in Dehradun: Robber’s Cave, Doon Valley, Har Ki Dun, Malsi Deer Park, Tapkeshwar Temple, Rajaji National Park, Buddha Temple, Sahastradhara Road, Dehradun Zoo, Mindrolling Monastery, Lacchiwalla, Zonal Museum, Paltan Bazar, and Shikhar Fall. Learn more about the best places to visit in Dehradun.</li>
+        <li>Nearest Airport: Jolly Grant Airport, Dehradun</li>
+        <li>Nearest Railway Station: Dehradun</li>
+    </ul>
+</section>
+
+
+   <div class="center">
+    <img src="https://lh3.googleusercontent.com/jF3sjxPC5YUxgeOqiPAoxXxbZW3hakKVQrete7kadM1hFV4KsNcBsnXvAY6O4c8gyejaPh2rplSks2Aq7s4bA73REegU5rC5-un9PTi3f2ZNN26_3rYcybDlFvt2p9ep-GmBJv6Lh4OtZx0IMg9v_a9MZLNAvnGwUhq2xQfV1b30E_afkM1qQc-HeU4GV8y9VB50TARy5g6QabtoO2V-QwFRrXIzMXVRLBZtTa6CFZhIj94p59Lw3vLxfCQ77tLfhuL00VPQdYuCBnZEiAjq7VHDL6G9BSEFiKLIBHDTgLpcBROlX4RsxC0CcwR_zduxMhe3iud2yXNYD-U0ipr9Q89lAGJisLfv2ZspenpdEfd-og_nyEqBkRMj3Ra1psaCxkKuEzHoDUz2mYVRsdFS-_kmMKudBm55I3bukqAMKZKXojGk2thMAYMXmRadakcPkedWknVuUCMHNpdqQ5Wd78OOAX3eKDK46TIpwgIP3BkurMx0awddEVCFXlKem2JhnilPyeN1oji2FwCH4VV1QsKvl4V1_9UTFeIiqUTjT92EHkjc_oVsHxXg4yuvFfkth4phgaUlQkoD3w0dvSVe7MqiuPuJ-aWmJKBeuEJFOs3pbfGJaTPkcDka_LsP2FzLq3V0Yfg7gWQ6GK3qIJFxboeluGDQ4ZVkv5IXmsWmDKvfTsQG9ztpcD4_rk5p-SYxksZbHLtCJ25qv3Zo7wrb4cOcpleSsdLIs2nQRDR0B-JaEeKm93r1UfEznzpFS2h3F5pM9dYLSpW77Rdw9iDNKAtxRx4hbwGRRD0=w780-h254-no?authuser=1" alt="shivam"></div>
+    <div id="follow">
+        <li><h3>Connect with us on : &nbsp;&nbsp;&nbsp;</h3></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100077963890907"><img src="https://i.pinimg.com/564x/2b/79/51/2b7951ca3923b28a9e77518b19d1ea46--how-to-get-learn-how.jpg" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/invites/contact/?i=1nu76logi4shi&utm_content=nv6pozc"><img src="https://image.similarpng.com/very-thumbnail/2020/05/Glossy-Instagram-logo-PNG.png" alt="Instagram"></a></li>
+        <li><a href="https://mobile.twitter.com/chandan181singh"><img src="https://image.similarpng.com/very-thumbnail/2020/06/Twitter-logo-on-transparent-background-PNG.png" alt="Twitter"></a></li>
+        <li><a href="https://www.linkedin.com/in/chandan-kumar-524568218"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt=""></a></li>
+    </div>
+</body>
+</html>

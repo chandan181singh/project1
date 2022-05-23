@@ -1,0 +1,159 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variable*/
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigatiom bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#logo{
+    margin: 5px 15px;
+}
+#logo img{
+    height: 90px;
+    width: 90px;
+    margin: 10px 10px;
+    border-radius: 20%;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 6px 22px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 60%;
+}
+
+#home {
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#home::before{
+    content: "";
+    background: url('../bg3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/*Utility Class*/
+.h-primary{
+    font-size: 3rem;
+    color: wheat;
+    padding: 150px 50px 12px;
+}
+ .h-secondary{
+    font-size: 2rem;
+    color: wheat;
+    padding: 150px 50px 12px;
+ }
+.btn{
+    padding: 0px 0px;
+    margin-top: 10%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: brown;
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+.btn :hover{
+           background-color: rgb(204, 186, 147);
+           padding: 0px 0px;
+           color: black;
+           border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+#home p{
+    color: antiquewhite;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px 200px;
+}
+
+/* Service */
+#services{
+        display: flex;
+        padding: 5px 5px;
+        margin: 25px;
+        height: 100px;
+        width: 100px;
+        
+}
+/*#services .box{
+    display: flex;
+    padding: 5px 5px;
+    margin: 25px;
+    height: 100px;
+    width: 100px;
+       
+}*/
+
+.Services-container h1{
+    color: black;
+}
+
+
+
+
+.box img{
+   height: 200px;
+   border: 6px solid brown;
+   margin-left: 30px;
+   border-radius: 20px;
+   background: aquamarine;
+}
+.box img:hover{
+    background-color: yellow;
+    opacity: 0.7;
+}
+
